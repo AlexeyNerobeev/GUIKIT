@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "GUIKIT"
 include(":app")
- 
+include(":uikit")
