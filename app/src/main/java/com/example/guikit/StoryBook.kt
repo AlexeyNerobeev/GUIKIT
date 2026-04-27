@@ -3,6 +3,8 @@ package com.example.guikit
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
+import com.example.uikit.Buttons.LogoutButton
+import com.example.uikit.Buttons.MainButton
 import com.example.uikit.Input
 
 //27.04.2026
@@ -30,4 +32,20 @@ fun showInputPassword(){
         withTrailingIcon = true,
         placeholder = "placeholder"
     )
+}
+
+@ShowkaseComposable
+@Composable
+fun showMainButton(){
+    MainButton(
+        text = "text",
+        onCLick = {  },
+        modifier = Modifier
+    )
+}
+
+@ShowkaseComposable
+@Composable
+fun showLogoutButton(){
+    LogoutButton() { }
 }
