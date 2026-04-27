@@ -6,6 +6,7 @@ import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.example.uikit.Buttons.LogoutButton
 import com.example.uikit.Buttons.MainButton
 import com.example.uikit.Input
+import com.example.uikit.Pagination
 
 //27.04.2026
 //11
@@ -48,4 +49,13 @@ fun showMainButton(){
 @Composable
 fun showLogoutButton(){
     LogoutButton() { }
+}
+
+@ShowkaseComposable
+@Composable
+fun showPagination(){
+    Pagination(
+        modifier = Modifier,
+        current = 1
+    )
 }
