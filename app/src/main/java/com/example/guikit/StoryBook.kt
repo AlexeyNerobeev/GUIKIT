@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.example.uikit.Buttons.LogoutButton
 import com.example.uikit.Buttons.MainButton
+import com.example.uikit.CustomCheckbox
 import com.example.uikit.Input
 import com.example.uikit.Pagination
 import com.example.uikit.Timer
@@ -68,5 +69,21 @@ fun showTimer(){
         modifier = Modifier,
         seconds = 0,
         minutes = 0
+    )
+}
+
+@ShowkaseComposable
+@Composable
+fun showCheckbox(){
+    CustomCheckbox(
+        checked = true
+    )
+}
+
+@ShowkaseComposable
+@Composable
+fun showUncheckedCheckbox(){
+    CustomCheckbox(
+        checked = false
     )
 }
