@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
 import com.example.uikit.Buttons.LogoutButton
 import com.example.uikit.Buttons.MainButton
+import com.example.uikit.CustomCard
 import com.example.uikit.CustomCheckbox
 import com.example.uikit.Input
 import com.example.uikit.Pagination
@@ -86,4 +87,16 @@ fun showUncheckedCheckbox(){
     CustomCheckbox(
         checked = false
     )
+}
+
+@ShowkaseComposable
+@Composable
+fun showCard(){
+    CustomCard(
+        modifier = Modifier,
+        title = "Schedule",
+        text = "Easily schedule event/games\n" +
+                "then find like minded players for battle. You up for it?",
+        icon = R.drawable.card_icon
+    ) { }
 }
