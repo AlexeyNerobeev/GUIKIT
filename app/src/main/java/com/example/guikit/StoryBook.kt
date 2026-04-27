@@ -7,6 +7,7 @@ import com.example.uikit.Buttons.LogoutButton
 import com.example.uikit.Buttons.MainButton
 import com.example.uikit.Input
 import com.example.uikit.Pagination
+import com.example.uikit.Timer
 
 //27.04.2026
 //11
@@ -57,5 +58,15 @@ fun showPagination(){
     Pagination(
         modifier = Modifier,
         current = 1
+    )
+}
+
+@ShowkaseComposable
+@Composable
+fun showTimer(){
+    Timer(
+        modifier = Modifier,
+        seconds = 0,
+        minutes = 0
     )
 }
