@@ -10,6 +10,7 @@ import com.example.uikit.CustomCard
 import com.example.uikit.CustomCheckbox
 import com.example.uikit.Input
 import com.example.uikit.Pagination
+import com.example.uikit.Select
 import com.example.uikit.Timer
 
 //27.04.2026
@@ -112,4 +113,15 @@ fun showBottomBar(){
         onChatClick = {  },
         onProfileClick = {  }
     ) { }
+}
+
+@ShowkaseComposable
+@Composable
+fun showSelect(){
+    Select(
+        modifier = Modifier,
+        onCLick = {  },
+        value = "value",
+        title = "FROM"
+    )
 }
