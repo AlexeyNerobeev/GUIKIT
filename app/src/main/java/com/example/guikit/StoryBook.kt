@@ -3,6 +3,7 @@ package com.example.guikit
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.airbnb.android.showkase.annotation.ShowkaseComposable
+import com.example.uikit.BottomBar
 import com.example.uikit.Buttons.LogoutButton
 import com.example.uikit.Buttons.MainButton
 import com.example.uikit.CustomCard
@@ -98,5 +99,17 @@ fun showCard(){
         text = "Easily schedule event/games\n" +
                 "then find like minded players for battle. You up for it?",
         icon = R.drawable.card_icon
+    ) { }
+}
+
+@ShowkaseComposable
+@Composable
+fun showBottomBar(){
+    BottomBar(
+        modifier = Modifier,
+        onStatisticsClick = {  },
+        onDiscoverClick = {  },
+        onChatClick = {  },
+        onProfileClick = {  }
     ) { }
 }
